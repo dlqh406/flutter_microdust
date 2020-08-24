@@ -38,7 +38,7 @@ class _MainState extends State<Main> {
     AirResult result = AirResult.fromJson(json.decode(response.body));
     return result;
   }
-
+// 앱이 시작하자마 바로 실행 -> _result에 값 삽입
   @override
   void initState() {
     // TODO: implement initState
