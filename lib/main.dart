@@ -1,3 +1,5 @@
+//https://javiercbk.github.io/json_to_dart/
+//위 링크에서 생성함, 블랭크에 postman에서 생성된 api를 복붙하고 제너레이트 함
 import 'package:flutter/material.dart';
 
 void main() {
