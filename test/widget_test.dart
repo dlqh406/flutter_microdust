@@ -19,7 +19,11 @@ test('http 통신 테스트',() async {
 // 현재 json파일이 response.body에 있음
 // 200은 통신코드인듯?
  expect(response.statusCode,200);
- 
+
+// json을 그대로 불러오는것이 아니라 decoding 하여 String으로 받아야함
+ AirResult result = AirResult.fromJson(json.decode(response.body));
+ expect(result.status, 'success');
+
 
 });
 }
